@@ -51,7 +51,7 @@ pipeline {
                }
            } 
         }
-        stage ('functional Test') {
+        stage ('Functional Test') {
            steps {
                dir('functional-test') {
                     git credentialsId: 'LoginGithub', url: 'https://github.com/JilvanJr/tasks-functional-tests'
